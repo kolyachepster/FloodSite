@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Боевые Тапочки</title>
+    <style>
+        body { 
+            background: url(background.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* Контейнер для всего контента */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Заголовок и аватарка */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .avatar {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .title {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Основной контент */
+        .content-box {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome-text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #444;
+            text-align: justify;
+            margin: 0;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #666, transparent);
+            margin: 25px 0;
+        }
+
+        /* Стили для красивых кнопок */
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(240,240,255,0.9));
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            min-width: 200px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .nav-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+
+        .nav-button::before {
+            content: "✨ ";
+        }
+
+        .nav-button::after {
+            content: " ✨";
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            
+            .avatar {
+                width: 180px;
+                height: 180px;
+            }
+            
+            .title {
+                font-size: 24px;
+            }
+            
+            .welcome-text {
+                font-size: 16px;
+            }
+            
+            .navigation-buttons {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+            
+            .nav-button {
+                width: 100%;
+                max-width: 300px;
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Заголовок с аватаркой -->
+        <div class="header">
+            <img src="avafluda.jpg" alt="Аватарка Флуда" class="avatar" width="240" height="240">
+            <h1 class="title">Флуд "Боевые Тапочки"</h1>
+            <hr>
+        </div>
+
+        <!-- Основной контент -->
+        <div class="content-box">
+            <p class="welcome-text">
+                Вᥴᥱⲙ ᥰρᥙʙᥱᴛᥙκᥙ!<br><br>
+                𐌿ρᥙɯ᧘᧐ ʙρᥱⲙя ᥰ᧐ᤋнᥲκ᧐ⲙᥙᴛьᥴя!<br><br>
+                Вы ᥰ᧐ᥰᥲ᧘ᥙ нᥲ ᥙнɸ᧐ρⲙᥲцᥙ᧐нныᥔ κᥲнᥲ᧘ ɸ᧘удᥲ «δ᧐ᥱʙыᥱ ᴛᥲᥰ᧐чκᥙ».<br><br>
+                Туᴛ ʙы ᥴⲙ᧐жᥱᴛᥱ ᧐ᤋнᥲκ᧐ⲙᥙᴛьᥴя ᥴ᧐ ᥴᥰᥙᥴκ᧐ⲙ ρ᧐᧘ᥱᥔ, ᥰρᥲʙᥙ᧘ᥲⲙᥙ ᥙ дρуᴦᥙⲙᥙ ᥙᤋⲙᥱнᥱнᥙяⲙᥙ ʙ᧐ ɸ᧘удᥱ ^^
+            </p>
+        </div>
+
+        <!-- Красивые кнопки навигации -->
+        <div class="navigation-buttons">
+            <a href="pravila.html" class="nav-button" style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);">
+                📜 Правила
+            </a>
+            <a href="spisok.html" class="nav-button" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);">
+                📋 Список ролей
+            </a>
+            <a href="vidosi.html" class="nav-button" style="background: linear-gradient(135deg, #FFD166 0%, #FFB347 100%);">
+                🎥 Видеогалерея
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Боевые Тапочки</title>
+    <style>
+        body { 
+            background: url(background.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* Контейнер для всего контента */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.85); /* Полупрозрачный белый фон */
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Заголовок и аватарка */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .avatar {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .title {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Основной контент */
+        .content-box {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome-text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #444;
+            text-align: justify;
+            margin: 0;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #666, transparent);
+            margin: 25px 0;
+        }
+
+        /* Секция для дополнительных картинок */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(240, 240, 240, 0.7);
+            border-radius: 10px;
+        }
+
+        .gallery-item {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid rgba(255, 255, 255, 0.8);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            
+            .avatar {
+                width: 180px;
+                height: 180px;
+            }
+            
+            .title {
+                font-size: 24px;
+            }
+            
+            .welcome-text {
+                font-size: 16px;
+            }
+            
+            .gallery-item {
+                width: 150px;
+                height: 120px;
+            }
+        }
+        /* Стили для красивых кнопок */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(240,240,255,0.9));
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    min-width: 180px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.nav-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Адаптивность для кнопок */
+@media (max-width: 768px) {
+    .navigation-buttons {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .nav-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Заголовок с аватаркой -->
+        <div class="header">
+            <img src="avafluda.jpg" alt="Аватарка Флуда" class="avatar" width="240" height="240">
+            <h1 class="title">Флуд "Боевые Тапочки"</h1>
+            <hr>
+        </div>
+
+        <!-- Основной контент -->
+        <div class="content-box">
+            <p class="welcome-text">
+                °~ Ⲇⲟⳝⲣⲟ ⲡⲟⲯⲁⲗⲟⲃⲁⲧь ⲃ "Ⳝⲟⲉⲃыⲉ ⲧⲁⲡⲟⳡⲕυ (Ⳓⲉⲛⲋⲏⲓⲛ ϝⳑⲟⲟⲇ)".<br><br>
+
+Роль свободна -   .<br>
+Роль занята - 🍓.<br>
+Роль забронирована - 🖇️.<br>
+------------------<br>
+Ⲙⲟⲏⲇⲱⲧⲁⲇⲧ:<br>
+Эⲙⳝⲉⲣ 🍓<br>
+Ⲕэύⲁ 🍓<br>
+Ⲗυⳅⲁ <br>
+Ⲇⲯυⲏⲏ <br>
+Ⲃⲉⲏⲧυ 🍓<br>
+Ⳝⲁⲣⳝⲁⲣⲁ <br>
+Ⲕⲗυ 🍓<br>
+Ⲁⲗьⳝⲉⲇⲟ <br>
+Ⲥⲁⲭⲁⲣⲟⳅⲁ 🍓<br>
+Ⲫυⲱⲗь <br>
+Ⲣэύⳅⲟⲣ <br>
+Ⳝⲉⲏⲏⲉⲧ <br>
+Ⲇυⲗюⲕ <br>
+Ⲣⲟⳅⲁⲣυя <br>
+Ⲇυⲟⲏⲁ 🍓<br>
+Ⲏⲟэⲗⲗь <br>
+Ⲙⲟⲏⲁ <br>
+Эⲟⲗⲁ <br>
+Ⲙυⲕⲁ <br>
+Варка<br>
+--------------------<br>
+Ⲗυ Юэ:<br>
+Ⳡⲯⲩⲏ ⲗυ <br>
+Ⲏυⲏ ⲅⲩⲁⲏ <br>
+Ⲕⲉ цυⲏ 🍓<br>
+Ⲅⲁⲏь Юύ <br>
+Ⳝэύ ⲇⲟⲩ <br>
+Ⲉ Ⲗⲁⲏь <br>
+Ⲥυⲏь яⲏь <br>
+Ⲥυⲏ цю 🍓<br>
+ⳡⲩⲏь юⲏь<br>
+ⲥяⲏ ⲗυⲏ <br>
+ⲭⲩ ⲧⲁⲟ 🍓<br>
+цυ цυ <br>
+яⲏь ⲫэύ <br>
+юⲏь цⳅυⲏь <br>
+ⲱэⲏь ⲭэ <br>
+ⳝⲁύ ⳡⲯⲩ <br>
+яⲟ яⲟ  <br>
+Ⲥяⲟ 🍓<br>
+Ⲕⲁ Ⲙυⲏ 🍓<br>
+Ⲥяⲏь Юⲏь<br>
+Цзы бай<br>
+-------------------<br>
+ 
+Ⳙⲏⲁⲇⳅⲩⲙⲁ:<br>
+ⲕⲁэⲇэⲭⲁⲣⲁ ⲕⲁⲇⳅⲩⲭⲁ 🍓<br>
+ёυⲙυя 🍓<br>
+ⲕⲁⲙυⲥⲁⲧⲟ ⲁяⲕⲁ<br> 
+ⲕⲁⲙυⲥⲁⲧⲟ ⲁяⲧⲟ <br>
+ⲧⲟⲙⲁ <br>
+ⲁⲣⲁⲧⲁⲕυ υⲧⲧⲟ 🍓<br>
+ⲅⲟⲣⲟ 🍓<br>
+ⲥⲁⲏⲅⲟⲏⲟⲙυя ⲕⲟⲕⲟⲙυ<br> 
+ⲥёⲅⲩⲏ ⲣⲁύⲇэⲏ 🍓<br>
+ⲕⲩⲇⳅё ⲥⲁⲣⲁ  <br>
+ⲥⲁю <br>
+ⲕⲩⲕυ ⲥυⲏⲟⳝⲩ 🍓<br>
+ⲥυⲕⲁⲏⲟυⲏ ⲭⲉύⲇⳅⲟ <br>
+Яэ ⲙυⲕⲟ 🍓<br>
+ⲧⲟⲙⲟ <br>
+Ⲧυⲟⲣυ<br>
+Ⲕυⲣⲁⲣⲁ<br>
+Мидзуки 🍓<br>
+------------<br>
+Ⲥⲩⲙⲉⲣⲩ:<br>
+ⲁⲗь-ⲭⲁύⲧⲁⲙ <br>
+ⲇⲟⲣυ 🍓<br>
+ⲥⲁύⲏⲟ 🍓<br>
+ⲇэⲭья <br>
+ⲕⲁⲏⲇⲁⲕυя <br>
+ⲕⲟⲗⲗⲉυ  <br>
+ⲗⲁύⲗⲁ <br>
+ⲏⲁⲭυⲇⲁ 🍓<br>
+ⲏυⲗⲩ <br>
+ⲧυⲅⲏⲁⲣυ <br>
+ⲕⲁⲃⲉⲭ <br>
+ⲫⲁⲣⲩⳅⲁⲏ <br>
+ⲥⲧⲣⲁⲏⲏυⲕ 🍓<br>
+ ------------------<br>
+Ⲫⲁⲧⲩυ:<br>
+ⲡьⲉⲣⲣⲟ <br>
+сандроне 🍓<br>
+ⲕⲟⲗⲟⲙⳝυⲏⲁ 🖇️<br>
+ⲁⲣⲗⲉⲕυⲏⲟ 🍓<br>
+ⲇⲟⲧⲧⲟⲣⲉ 🍓<br>
+ⲕⲁⲡυⲧⲁⲏⲟ <br>
+ⳡⲁύⲗьⲇ/ⲧⲁⲣⲧⲁⲗья 🍓<br>
+ⲡⲩⲗьⳡυⲏⲉⲗⲗⲁ <br>
+ⲡⲁⲏⲧⲁⲗⲟⲏⲉ <br>
+ⲥυⲏьⲟⲣⲁ 🍓<br>
+цⲁⲣυцⲁ 🍓<br>
+Ⲥⲕⲁⲣⲁⲙⲩⳡⳡⲁ 🍓<br>
+--------------<br>
+Ⲥⲕυⲣⲕ 🖇️<br>
+---------------<br>
+Ⲫⲟⲏⲧⲉύⲏ:<br>
+Ⲫⲩⲣυⲏⲁ 🍓<br>
+ⲗυⲏⲏυ 🍓<br>
+ⲗυⲏⲏⲉⲧ <br>
+Ⲫⲣυⲙυⲏⲉ 🍓<br>
+Ⲣυⳅⲗυ 🍓<br>
+Ⲏёⲃυⲗⲗⲉⲧ <br>
+Ⲱⲁⲣⲗⲟⲧⲁ 🖇️<br>
+Ⲕⲗⲟⲣυⲏⲇⲁ 🖇️<br>
+Ⲏⲁⲃυя 🍓<br>
+Ⲱⲉⲃⲣёⳅ <br>
+Сиджвин 🍓<br>
+--------------------<br>
+Ⲏⲁⲧⲗⲁⲏ:<br>
+Ⲙⲩⲁⲗⲁⲏυ 🍓<br>
+Ⲕⲁⳡυⲏⲁ 🍓<br>
+Ⲕυⲏυⳡ 🍓<br>
+Ахав <br>
+Ⲱυⲗⲟⲏⲉⲏ 🍓<br>
+Ⳡⲁⲥⲕⲁ<br>
+Ⲙⲁⲃⲩυⲕⲁ 🍓<br>
+Ⲟⲣⲟⲣⲟⲏ <br>
+Ⲥυⲧⲗⲁⲗυ 🍓<br>
+Вареса 🍓<br>
+Ифа 🍓<br>
+Иансан <br>
+------------------<br>
+Нод-край:<br>
+
+Флинс Кирилл 🍓<br>
+Лаума 🍓<br>
+Ягода<br>
+Нефер 🍓<br>
+Инеффа 🍓<br>
+Айно 🍓<br>
+Иллуга 🍓<br>
+
+--------------------<br>
+Ⲧⲁⲕⲯⲉ:<br>
+ⲇⲁⲏⲥⲗⲉύⲫ<br>
+ⲗюⲙυⲏ <br>
+υⲧэⲣ 🍓<br>
+ⲡⲁύⲙⲟⲏ<br>
+мини-дурин 🍓-влд.<br>
+-----------------------<br><br>
+
+Доктор Рацио 🍓<br>
+-------------------------
+            </p>
+        </div>
+        <!-- Пример дополнительного текстового блока -->
+        <div class="content-box" style="margin-top: 20px;">
+            <<!-- Красивые кнопки навигации -->
+<div class="navigation-buttons">
+    <a href="index.html" class="nav-button" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        🏠 Главная
+    </a>
+    <a href="pravila.html" class="nav-button" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);">
+        📜 Правила флуда
+    </a>
+    <a href="vidosi.html" class="nav-button" style="background: linear-gradient(135deg, #FFD166 0%, #FFB347 100%);">
+        🎥 Видеогалерея
+    </a>
+</div>
+        </div>
+    </div>
+</body>
+</html>
