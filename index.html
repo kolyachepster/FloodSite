@@ -149,6 +149,79 @@
                 padding: 12px 25px;
             }
         }
+        /* В секции navigation-buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(240,240,255,0.9));
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    min-width: 140px;
+    max-width: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: 2px solid rgba(255,255,255,0.3);
+    flex: 1;
+    text-align: center;
+    word-break: break-word;
+}
+
+/* Адаптивность для узких экранов */
+@media (max-width: 768px) {
+    .navigation-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px;
+        gap: 12px;
+        margin: 20px 0;
+    }
+    
+    .nav-button {
+        width: 100%;
+        min-width: unset;
+        max-width: 100%;
+        padding: 14px 15px;
+        font-size: 15px;
+        margin: 0;
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .nav-button {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+    
+    .navigation-buttons {
+        padding: 12px;
+        margin: 15px 0;
+    }
+}
     </style>
 </head>
 <body>
