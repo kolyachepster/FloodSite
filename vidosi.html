@@ -271,7 +271,7 @@
     <div class="container">
         <!-- Шапка страницы -->
         <div class="page-header">
-            <h1 class="page-title">🎬 Видеогалерея "Боевые Тапочки"</h1>
+            <h1 class="page-title">🎬 Видеогалерея "Боевые Тапочки"(из РФ только с впном)</h1>
             <p style="color: #666; font-size: 18px;">Смотрите YouTube видео нашего флуда!</p>
         </div>
 
@@ -399,8 +399,7 @@
                 </div>
             </div>
         </div>
-
-            <!-- Видео 6 -->
+        
             <div class="youtube-item">
                 <iframe class="youtube-iframe" 
                         src="https://www.youtube.com/embed/GR-GlycNwKY" 
@@ -417,8 +416,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Навигация внизу -->
         <div class="navigation-buttons">
             <a href="index.html" class="nav-button">🏠 На главную</a>
         </div>
@@ -427,7 +424,6 @@
     <script>
         // Простой скрипт для улучшения пользовательского опыта
         document.addEventListener('DOMContentLoaded', function() {
-            // Добавляем анимацию при загрузке видео
             const videoItems = document.querySelectorAll('.youtube-item');
             videoItems.forEach((item, index) => {
                 item.style.opacity = '0';
@@ -451,8 +447,6 @@
                     this.parentElement.parentElement.style.boxShadow = '0 8px 30px rgba(0, 0, 0, 0.15)';
                 });
             });
-            
-            // Показываем сообщение о загрузке видео
             console.log('Видеогалерея "Боевые Тапочки" загружена!');
         });
     </script>
